@@ -5,41 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valentine's Day Image</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            // Function to adjust styles based on viewport width
-            function adjustStyles() {
-                var viewportWidth = $(window).width();
-                if (viewportWidth < 600) { // Adjust styles for screens less than 600px wide
-                    $('.greeting').css('font-size', '1.5em');
-                    $('.greeting h1').css('font-size', '1.2em');
-                    $('.greeting h4').css('font-size', '0.8em');
-                    $('.valentines-image').css('max-width', '100%').css('border-radius', '10px').css('box-shadow', '0 0 5px rgba(0, 0, 0, 0.2)');
-                } else { // Reset styles for larger screens
-                    $('.greeting').css('font-size', '2.5em');
-                    $('.greeting h1').css('font-size', '');
-                    $('.greeting h4').css('font-size', '');
-                    $('.valentines-image').css('max-width', '60%').css('border-radius', '50px').css('box-shadow', '0 0 20px rgba(0, 0, 0, 0.2)');
-                }
-            }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-            // Call the adjustStyles function on document ready and window resize
-            adjustStyles();
-            $(window).resize(adjustStyles);
-        });
-    </script>
+
 </head>
 <body>
-    <div class="container">
-        <div class="greeting">
-            <h1>Happy Valentine's Day!</h1>
-            <h4> Madam Hanieleen Joy F. Manzano</h4>
-            <img src="images/heart.png" alt="heart">
-        </div>
-            <div class="image">
-                <img src="images/profile1.jpg" alt="Valentine's Day" class="valentines-image">
-            </div>
+    <div class="content">
+        <h1>Happy Valentine's Day!</h1>
+        <h4>Hanieleen Joy F. Manzano</h4>
+        <a href="collection.html">
+        <img src="images/heart.png" alt="Valentine's Day Image" class="animation">
+        </a>
     </div>
 </body>
 </html>
