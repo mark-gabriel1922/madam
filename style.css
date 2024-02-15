@@ -13,7 +13,7 @@ body {
 
 .animation {
     max-width: 50%;
-    animation: floatAnimation 5s infinite ease-in-out;
+    animation: heartbeat 1s infinite ease-in-out;
 }
 
 @keyframes heartbeat {
